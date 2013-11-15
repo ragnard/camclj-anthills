@@ -78,8 +78,8 @@
   [points]
   (let [[x y] (sum-points points)
         npoints (count points)]
-    [(long (/ x npoints))
-     (long (/ y npoints))]))
+    [(/ x npoints)
+     (/ y npoints)]))
 
 (defn clusters
   "Given a number n, and a sequence of points, try to assign each
