@@ -2,7 +2,9 @@
 
 A naive, slow but sort-of working implementation of
 [K-means clustering](http://en.wikipedia.org/wiki/K-means_clustering)
-implemented during the cam-clj meetup on 14/11/2013.
+implemented during the
+[cam-clj meetup](http://www.meetup.com/Cambridge-NonDysFunctional-Programmers/events/149073582/)
+on 14/11/2013.
 
 Added comments, improved visualisations and tidied up a little bit
 afterwards.
