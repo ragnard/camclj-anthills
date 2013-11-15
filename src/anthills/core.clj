@@ -33,7 +33,8 @@
 
 
 ;;--------------------------------------------------------------------
-;; k-means clustering as understood after hastily reading:
+;; A naive implementation of K-means clustering, as understood after
+;; hastily reading:
 ;; http://en.wikipedia.org/wiki/K-means_clustering
 
 (defn pick-n
@@ -45,14 +46,14 @@
       (recur (conj ret (rand-nth coll))))))
 
 (defn distance
-  "Calculate the euclidean distance between two points"
+  "Calculate the Euclidean distance between two points"
   [[x1 y1] [x2 y2]]
   (Math/sqrt (+ (Math/pow (- x1 x2) 2)
                 (Math/pow (- y1 y2) 2))))
 
 (defn closest-point
   "Given a sequence of points, return the one that is closest to p, as
-  determined by having the shortest euclidean distance."
+  determined by having the shortest Euclidean distance."
   [points p]
   (first (sort-by (partial distance p) points)))
 
